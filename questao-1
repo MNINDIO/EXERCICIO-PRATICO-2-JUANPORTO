@@ -30,6 +30,9 @@
     </footer>
 </body>
 </html>
+
+//css
+
 /* Reset de estilos básicos */
 * {
     margin: 0;
