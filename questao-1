@@ -22,7 +22,7 @@
 
     <section class="foto">
         <h2>Minha Foto</h2>
-        <img src="minha_foto.jpg" alt="Foto do JUAN" width="200">
+        <img src="minha_foto.jpg" alt="Foto de perfil de Juan Porto Vieira">
     </section>
 
     <footer>
@@ -30,18 +30,22 @@
     </footer>
 </body>
 </html>
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo global da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Estilo do cabeçalho */
 header {
     background-color: #4CAF50;
     color: white;
@@ -57,6 +61,7 @@ p {
     font-size: 18px;
 }
 
+/* Estilo das seções */
 section {
     margin: 20px;
     padding: 20px;
@@ -65,12 +70,23 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo dos títulos das seções */
 h2 {
     color: #4CAF50;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* Estilo da imagem na seção foto */
+.foto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do rodapé */
 footer {
     text-align: center;
     margin-top: 30px;
@@ -81,5 +97,25 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .foto img {
+        max-width: 150px;
+    }
 }
 
